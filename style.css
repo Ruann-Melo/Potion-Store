@@ -24,6 +24,7 @@ Secondaries - #C466E8, #FE70FF, #7D66E8, #707DFF
 }
 
 body {
+    color: var(--base-white);
     background-color: var(--geode-lilac);
 }
 
@@ -78,7 +79,7 @@ nav {
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 50vw;
+        width: 100vw;
         height: 92vh;
         background: var(--geode-lilac);
         flex-direction: column;
@@ -128,7 +129,6 @@ nav {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    color: var(--base-white);
 }
 
 #main-message {
@@ -141,12 +141,23 @@ nav {
     background-color: var(--shadow-purple);
     border: 0;
     border-radius: 1em;
-    color: var(--base-white);
     cursor: pointer;
     text-decoration: none;
+}
+
+#main-button a {
+    opacity: 100%;
 }
 
 #main-button:hover {
     background-color: var(--blueing-purple);
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+}
+
+footer {
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
